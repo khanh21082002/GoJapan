@@ -6,6 +6,8 @@ import { colors, fonts } from "../../theme";
 
 function AccountScreen(props) {
     const [name, setName] = useState("thuong");
+    const { navigation, route } = props  
+    const { navigate, goBack } = navigation
     return (
         <View style={styles.container}>
             <Image  source={{uri: "https://images.foody.vn/BlogsContents/46444498_1785582584898023_6834569445101273088_n(1).jpg"}} style={styles.image}/>
